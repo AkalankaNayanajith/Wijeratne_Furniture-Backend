@@ -24,6 +24,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 // POST
 // DELETE
 
+//{ "name": "luxury sofa",
+// "category":"chairs",
+// "description": "cheap affordable sofa",
+//"market_price": 75000,
+//"discount": 5.2,
+//"price": 50000,
+//"color": "Red",
+//"material": "leather",
+// "country": "Sri lanka"}
+
 public class ProductController {
 
     @Autowired
