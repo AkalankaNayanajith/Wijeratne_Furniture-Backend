@@ -1,2 +1,13 @@
-package com.wijeratnefurniture.ecomfurniture.dto;public class GetProductDto {
+package com.wijeratnefurniture.ecomfurniture.dto;
+
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class GetProductDto {
+    private String id;
 }
+
