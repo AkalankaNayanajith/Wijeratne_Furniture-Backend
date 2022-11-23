@@ -26,11 +26,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class UserController {
 
     @Autowired
-    private UserService UserService;
+    private UserService userService;
 
     @PostMapping
     public ResponseEntity<Optional<User>> saveUser(@RequestBody CreateUserDto userDto) {
-        return new ResponseEntity<>(UserService.saveUser(userDto), HttpStatus.CREATED);
+        return new ResponseEntity<>(userService.saveUser(userDto), HttpStatus.CREATED);
     }    
 
 

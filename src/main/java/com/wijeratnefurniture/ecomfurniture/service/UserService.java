@@ -9,7 +9,7 @@ public interface UserService {
 
     // Prototype
 
-    Optional<User> saveUser(final CreateUserDto User);
+    Optional<User> saveUser(final CreateUserDto user);
     // Return Type -> method Name -> What are the parameters
 
 }

@@ -9,6 +9,8 @@ import lombok.*;
 @Getter
 @Setter
 public class CreateProductDto {
+    
+    private String prodid; //we give ID manually
 
     private String name;
 

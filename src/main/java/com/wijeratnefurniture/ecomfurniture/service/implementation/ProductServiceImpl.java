@@ -34,7 +34,8 @@ public class ProductServiceImpl implements ProductService {
         // Converting
 
         Product product = new Product();
-
+        
+        product.setProdid(productDto.getProdid());
         product.setName(productDto.getName());
         product.setCategory(productDto.getCategory());
         product.setDescription(productDto.getDescription());

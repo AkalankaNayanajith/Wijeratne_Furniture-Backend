@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
 
         // Validation
         // Sofa MX-98
-        Optional<User> foundUser = userRepository.findByName(UserDto.getFirstName());
+        Optional<User> foundUser = userRepository.findByFirstName(UserDto.getFirstName());
 
         if(foundUser.isPresent()) {
 
@@ -35,6 +35,7 @@ public class UserServiceImpl implements UserService {
         User user = new User();
 
         user.setFirstName(UserDto.getFirstName());
+        user.setLastName(UserDto.getLastName());
         
 
         return Optional.of(userRepository.save(user)); // automatically returns the saved object
