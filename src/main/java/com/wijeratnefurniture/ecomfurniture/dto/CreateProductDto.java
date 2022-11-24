@@ -29,4 +29,6 @@ public class CreateProductDto {
     private String material;
 
     private String country;
+
+    private String imgpath; 
 }
