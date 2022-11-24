@@ -14,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -41,11 +42,17 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<Optional<Product>> saveProduct(@RequestBody CreateProductDto productDto) {
         return new ResponseEntity<>(productService.saveProduct(productDto), HttpStatus.CREATED);
     }    
 
     // cmd -> mongod
+
+    @GetMapping("/getAll")
+    public ResponseEntity<Iterable<Product>> allProducts() {
+
+        return new ResponseEntity<>(productService.allProducts(), HttpStatus.ACCEPTED);
+    }
 
 }
