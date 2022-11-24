@@ -12,4 +12,6 @@ public interface ProductService {
     Optional<Product> saveProduct(final CreateProductDto product);
     // Return Type -> method Name -> What are the parameters
 
+
+   Iterable<Product> allProducts();
 }
