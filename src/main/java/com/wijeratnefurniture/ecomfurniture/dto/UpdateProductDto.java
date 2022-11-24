@@ -13,10 +13,10 @@ import java.sql.Date;
 @Setter
 public class UpdateProductDto {
     private String id;
-    private String name;
+    private String newprodname;
     private String category;
     private String description;
-    private float market_price;
+    private int quantity;
     private float discount;
     private float price;
     private String color;

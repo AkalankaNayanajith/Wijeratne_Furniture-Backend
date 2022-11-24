@@ -17,13 +17,13 @@ public class Product {
 
     private String prodid; //we give ID manually
 
-    private String name;  //all these below are attributes of the product entity
+    private String newprodname;  //all these below are attributes of the product entity
 
     private String category;
 
     private String description;
     //product image to be added
-    private float market_price;
+    private int quantity;
 
     private float discount;
 

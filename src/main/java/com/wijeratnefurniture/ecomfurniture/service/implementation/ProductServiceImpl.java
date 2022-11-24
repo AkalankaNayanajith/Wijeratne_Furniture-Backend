@@ -22,7 +22,7 @@ public class ProductServiceImpl implements ProductService {
 
         // Validation
         // Sofa MX-98
-        Optional<Product> foundProduct = productRepository.findByName(productDto.getName());
+        Optional<Product> foundProduct = productRepository.findByNewprodname(productDto.getNewprodname());
 
         if(foundProduct.isPresent()) {
 
@@ -36,10 +36,10 @@ public class ProductServiceImpl implements ProductService {
         Product product = new Product();
         
         product.setProdid(productDto.getProdid());
-        product.setName(productDto.getName());
+        product.setNewprodname(productDto.getNewprodname());
         product.setCategory(productDto.getCategory());
         product.setDescription(productDto.getDescription());
-        product.setMarket_price(productDto.getMarket_price());
+        product.setQuantity(productDto.getQuantity());
         product.setDiscount(productDto.getDiscount());
         product.setPrice(productDto.getPrice());
         product.setColor(productDto.getColor());

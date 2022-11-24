@@ -12,13 +12,13 @@ public class CreateProductDto {
     
     private String prodid; //we give ID manually
 
-    private String name;
+    private String newprodname;
 
     private String category;
 
     private String description;
 
-    private float market_price;
+    private int quantity;
 
     private float discount;
 
