@@ -2,11 +2,12 @@ package com.wijeratnefurniture.ecomfurniture.dto;
 
 import lombok.*;
 
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Getter
-@Setter
-public class CreateCategoryDto {
-    private String categoryName;
+public class GetProductDto {
+    private String id;
 }
+
