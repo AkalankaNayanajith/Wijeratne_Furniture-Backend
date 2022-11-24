@@ -45,6 +45,7 @@ public class ProductServiceImpl implements ProductService {
         product.setColor(productDto.getColor());
         product.setMaterial(productDto.getMaterial());
         product.setCountry(productDto.getCountry());
+        product.setImgpath(productDto.getImgpath());
 
         return Optional.of(productRepository.save(product)); // automatically returns the saved object
         // returns Product object with id
@@ -52,4 +53,10 @@ public class ProductServiceImpl implements ProductService {
         // save -> without id
         // save -> with id
     }
+
+    @Override
+    public Iterable<Product> allProducts() {
+        return productRepository.findAll();
+    }
+
 }
