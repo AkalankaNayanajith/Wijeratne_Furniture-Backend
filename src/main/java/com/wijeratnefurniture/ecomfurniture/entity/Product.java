@@ -37,4 +37,6 @@ public class Product {
 
     private String imgpath; 
 
+    private String image64; 
+
 }

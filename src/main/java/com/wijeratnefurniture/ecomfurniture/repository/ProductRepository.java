@@ -16,6 +16,9 @@ public interface ProductRepository extends CrudRepository<Product, String> {
 // Get By id
 
 // Get By name
+
+
+
 Optional<Product> findByNewprodname(final String newprodname);
 
 }
