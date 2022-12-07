@@ -43,9 +43,10 @@ public class UserServiceImpl implements UserService {
         user.setRole(UserDto.getRole());
         user.setEmail(UserDto.getEmail());
         user.setPassword(UserDto.getPassword());
-        user.setImage64(UserDto.getImage64());
+        user.setProfilepic(UserDto.getProfilepic());
         user.setAge(UserDto.getAge());
         user.setDOB(UserDto.getDOB());
+        user.setPhonenumber(UserDto.getPhonenumber());
         
 
         return Optional.of(userRepository.save(user)); // automatically returns the saved object

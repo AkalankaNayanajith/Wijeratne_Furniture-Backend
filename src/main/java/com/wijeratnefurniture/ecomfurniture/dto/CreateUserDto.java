@@ -19,10 +19,11 @@ public class CreateUserDto {
     private String role;
     private String email;      
     private String password;
-    private String image64;
+    private String profilepic;
 // image to be added
     private float age;
     private String DOB;
+    private int phonenumber;
 
     
 }

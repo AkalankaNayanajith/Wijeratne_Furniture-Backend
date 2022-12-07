@@ -29,6 +29,7 @@ public class User {
 // image to be added
     private float age;
     private String DOB;
-    private String image64; 
+    private String profilepic; 
+    private int phonenumber;
 
 }
