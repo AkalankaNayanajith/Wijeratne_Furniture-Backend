@@ -11,5 +11,6 @@ public interface UserService {
 
     Optional<User> saveUser(final CreateUserDto user);
     // Return Type -> method Name -> What are the parameters
-
+ 
+    Iterable<User> allUsers();
 }

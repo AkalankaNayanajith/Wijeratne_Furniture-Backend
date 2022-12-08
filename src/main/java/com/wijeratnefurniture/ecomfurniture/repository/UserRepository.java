@@ -1,3 +1,5 @@
+//Call to DB and has connection with DB
+
 package com.wijeratnefurniture.ecomfurniture.repository;
 
 import com.wijeratnefurniture.ecomfurniture.entity.User;
@@ -13,7 +15,7 @@ public interface UserRepository extends CrudRepository<User, String> {
 // Get all
 // Get By id
 
-// Get By name
-Optional<User> findByFirstName(final String firstName);
+// Get By email
+Optional<User> findByEmail(final String email);
 
 }

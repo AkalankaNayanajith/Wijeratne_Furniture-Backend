@@ -46,6 +46,7 @@ public class ProductServiceImpl implements ProductService {
         product.setMaterial(productDto.getMaterial());
         product.setCountry(productDto.getCountry());
         product.setImgpath(productDto.getImgpath());
+        product.setImage64(productDto.getImage64());
 
         return Optional.of(productRepository.save(product)); // automatically returns the saved object
         // returns Product object with id

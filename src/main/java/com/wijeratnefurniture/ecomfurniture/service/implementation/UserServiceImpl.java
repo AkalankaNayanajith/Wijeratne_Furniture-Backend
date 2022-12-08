@@ -20,8 +20,8 @@ public class UserServiceImpl implements UserService {
         // id missing
 
         // Validation
-        // Sofa MX-98
-        Optional<User> foundUser = userRepository.findByFirstName(UserDto.getFirstName());
+  
+        Optional<User> foundUser = userRepository.findByEmail(UserDto.getEmail());
 
         if(foundUser.isPresent()) {
 
@@ -34,14 +34,32 @@ public class UserServiceImpl implements UserService {
 
         User user = new User();
 
+        user.setUserid(UserDto.getUserid());
         user.setFirstName(UserDto.getFirstName());
         user.setLastName(UserDto.getLastName());
+        user.setAddress(UserDto.getAddress());
+        user.setGender(UserDto.getGender());
+        user.setNIC(UserDto.getNIC());
+        user.setRole(UserDto.getRole());
+        user.setEmail(UserDto.getEmail());
+        user.setPassword(UserDto.getPassword());
+        user.setProfilepic(UserDto.getProfilepic());
+        user.setAge(UserDto.getAge());
+        user.setDOB(UserDto.getDOB());
+        user.setPhonenumber(UserDto.getPhonenumber());
         
 
         return Optional.of(userRepository.save(user)); // automatically returns the saved object
-        // returns Product object with id
+        // returns User object with id
 
         // save -> without id
         // save -> with id
     }
+
+    @Override
+    public Iterable<User> allUsers() {
+        return userRepository.findAll();
+    }
+  
+
 }
