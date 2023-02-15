@@ -9,5 +9,7 @@ import lombok.*;
 @Getter
 @Setter
 public class DeleteProductDto {
-    private String id;
+    private String prodid;
 }
+
+

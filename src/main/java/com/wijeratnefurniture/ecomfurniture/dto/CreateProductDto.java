@@ -30,7 +30,7 @@ public class CreateProductDto {
 
     private String country;
 
-    private String imgpath; 
-
     private String image64; 
+
+    private String images64; 
 }
