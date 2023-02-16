@@ -22,8 +22,8 @@ public class UpdateProductDto {
     private String color;
     private String material;
     private String country;
-    private String imgpath;
     private String image64; 
+    private String images64; 
 
      
 }
