@@ -20,6 +20,7 @@ import static com.wijeratnefurniture.ecomfurniture.entity.Category.*;
 @RestController
 @CrossOrigin
 @RequiredArgsConstructor
+@RequestMapping
 
 public class CategoryController {    
 
