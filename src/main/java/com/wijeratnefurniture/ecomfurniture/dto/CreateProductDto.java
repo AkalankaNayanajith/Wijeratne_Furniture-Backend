@@ -1,6 +1,8 @@
 //what we want from frontend.... here we dont want ID and we want everything else about a product
 package com.wijeratnefurniture.ecomfurniture.dto;
 
+import java.util.List;
+
 import lombok.*;
 
 @AllArgsConstructor
@@ -32,5 +34,5 @@ public class CreateProductDto {
 
     private String image64; 
 
-    private String images64; 
+    private List<String> images64; 
 }

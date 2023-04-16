@@ -19,6 +19,10 @@ public interface ProductRepository extends CrudRepository<Product, String> {
 
 
 
-Optional<Product> findByNewprodname(final String newprodname);
+// find a Product
+Optional<Product> findByNewprodname(String newprodname);
+Optional<Product> findByProdid(String prodid);
+// Optional<Product> findByNewprodname(final String newprodname);
+
 
 }

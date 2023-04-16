@@ -1,6 +1,9 @@
 package com.wijeratnefurniture.ecomfurniture.entity;
 
 import lombok.*;
+
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -37,6 +40,6 @@ public class Product {
 
     private String image64; 
 
-    private String images64; 
+    private List<String> images64; 
 
 }
