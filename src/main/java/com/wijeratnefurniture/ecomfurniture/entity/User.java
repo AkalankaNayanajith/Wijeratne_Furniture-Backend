@@ -31,5 +31,6 @@ public class User {
     private String DOB;
     private String profilepic; 
     private int phonenumber;
+    private Cart cart;
 
 }
